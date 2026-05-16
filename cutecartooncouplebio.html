@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cute Cartoon Couple | Romantic Gifts & Couple Products</title>
+    <meta name="description"
+        content="Discover trending romantic gifts, couple products, anniversary surprises, and boyfriend girlfriend gift ideas." />
+    <meta name="keywords"
+        content="couple gifts, girlfriend gifts, boyfriend gifts, romantic products, amazon affiliate products" />
+    <meta name="author" content="Cute Cartoon Couple" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0d0d0d;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1a001f, #0d0d0d);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: #ff0080;
+            filter: blur(180px);
+            opacity: 0.25;
+            top: -150px;
+            left: -100px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .profile {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #ff4da6;
+            overflow: hidden;
+            margin: auto;
+            box-shadow: 0 0 40px rgba(255, 0, 128, 0.5);
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-top: 30px;
+            font-weight: 800;
+            background: linear-gradient(to right, #ff4da6, #b266ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: #ccc;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            margin-top: 35px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border-radius: 14px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #ff0080, #7928ca);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+        }
+
+        .btn-secondary {
+            border: 1px solid #444;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            border-color: #ff4da6;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 60px;
+            font-weight: 800;
+        }
+
+        .categories {
+            padding: 100px 20px;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .category-card {
+            background: #141414;
+            border-radius: 30px;
+            padding: 25px;
+            border: 1px solid #222;
+            transition: 0.4s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+            border-color: #ff4da6;
+        }
+
+        .category-card h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .category-card p {
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+
+        .product-card {
+            background: #0d0d0d;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #222;
+            margin-bottom: 25px;
+            transition: 0.3s ease;
+        }
+
+        .product-card:hover {
+            border-color: #ff4da6;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .product-title h3 {
+            font-size: 1.1rem;
+        }
+
+        .price {
+            color: #ff4da6;
+            font-weight: 700;
+        }
+
+        .product-info p {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 15px 0;
+        }
+
+        .buy-btn {
+            display: block;
+            text-align: center;
+            padding: 14px;
+            border-radius: 14px;
+            background: linear-gradient(to right, #ff0080, #7928ca);
+            color: white;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            transform: scale(1.03);
+        }
+
+        .cta {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px 100px;
+        }
+
+        .cta-box {
+            background: linear-gradient(to right, #ff0080, #7928ca);
+            padding: 60px 30px;
+            border-radius: 35px;
+            text-align: center;
+        }
+
+        .cta-box h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-box p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        footer {
+            border-top: 1px solid #222;
+            text-align: center;
+            padding: 30px 20px;
+            color: #777;
+        }
+
+        @media(max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            .section-title {
+                font-size: 2.3rem;
+            }
+
+            .cta-box h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="profile">
+                <img src="cutecartoon.jpg" alt="Cute Cartoon Couple">
+            </div>
+
+            <h1>Cute Cartoon Couple</h1>
+
+            <p>
+                Romantic Couple Gifts • Viral Love Products • Trending Surprise Ideas For Girlfriend & Boyfriend ❤️
+            </p>
+
+            <div class="hero-buttons">
+                <a href="https://instagram.com/cute_cartoon_couple" class="btn btn-primary">Instagram ❤️</a>
+                <a href="#products" class="btn btn-secondary">Explore Products ✨</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories" id="products">
+        <h2 class="section-title">Trending Couple Products 💝</h2>
+
+        <div class="category-grid" id="categoryContainer">
+
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-box">
+            <h2>Weekly Romantic Product Updates ✨</h2>
+
+            <p>
+                Discover trending anniversary gifts, surprise products, couple fashion, and viral romantic items updated
+                every week.
+            </p>
+
+            <a href="https://instagram.com/cute_cartoon_couple" class="btn btn-secondary"
+                style="margin-top:30px; display:inline-block; background:black; border:none;">
+                Follow Now ❤️
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Cute Cartoon Couple • Affiliate Store • All Rights Reserved
+    </footer>
+    <script>
+        const categories = [
+            {
+                title: '❤️ Gifts For Girlfriend',
+                description: 'Trending romantic gifts girls love.',
+                products: [
+                    {
+                        name: 'Spotify Acrylic Frame 🎵',
+                        image: 'https://m.media-amazon.com/images/I/71QKQ9mwV7L._SX679_.jpg',
+                        description: 'Custom romantic memory frame.',
+                        link: 'https://www.amazon.in/s?k=spotify+photo+frame'
+                    },
+                    {
+                        name: 'Explosion Gift Box ❤️',
+                        image: 'https://m.media-amazon.com/images/I/71L2HGqz5BL._SX679_.jpg',
+                        description: 'Romantic surprise memory box.',
+                        link: 'https://www.amazon.in/s?k=explosion+gift+box'
+                    },
+                    {
+                        name: 'Cute Teddy Combo 🧸',
+                        image: 'https://m.media-amazon.com/images/I/71JQ3kQp3XL._SX679_.jpg',
+                        description: 'Cute teddy gift surprise.',
+                        link: 'https://www.amazon.in/s?k=teddy+gift'
+                    }
+                ]
+            },
+
+            {
+                title: '🖤 Gifts For Boyfriend',
+                description: 'Trending stylish gifts for boys.',
+                products: [
+                    {
+                        name: 'Leather Wallet 👑',
+                        image: 'https://m.media-amazon.com/images/I/81Qs+f7K0VL._SX679_.jpg',
+                        description: 'Luxury stylish wallet.',
+                        link: 'https://www.amazon.in/s?k=wallet+men'
+                    },
+                    {
+                        name: 'Gaming Headphones 🎧',
+                        image: 'https://m.media-amazon.com/images/I/71Q4+7rk2eL._SX679_.jpg',
+                        description: 'Perfect gaming headset.',
+                        link: 'https://www.amazon.in/s?k=gaming+headphones'
+                    },
+                    {
+                        name: 'Smart Watch ⌚',
+                        image: 'https://m.media-amazon.com/images/I/61TapeOXotL._SX679_.jpg',
+                        description: 'Modern smartwatch.',
+                        link: 'https://www.amazon.in/s?k=smart+watch'
+                    }
+                ]
+            },
+
+            {
+                title: '💑 Matching Couple Items',
+                description: 'Cute matching products for couples.',
+                products: [
+                    {
+                        name: 'Couple Rings 💍',
+                        image: 'https://m.media-amazon.com/images/I/61v8mA6s3XL._SX679_.jpg',
+                        description: 'Beautiful matching ring set.',
+                        link: 'https://www.amazon.in/s?k=couple+rings'
+                    },
+                    {
+                        name: 'Couple Mug Set ☕',
+                        image: 'https://m.media-amazon.com/images/I/71N3f0J9kGL._SX679_.jpg',
+                        description: 'Cute coffee mugs.',
+                        link: 'https://www.amazon.in/s?k=couple+mugs'
+                    },
+                    {
+                        name: 'Mini Projector 🎬',
+                        image: 'https://m.media-amazon.com/images/I/71YpWKNR4XL._SX679_.jpg',
+                        description: 'Movie night projector.',
+                        link: 'https://www.amazon.in/s?k=mini+projector'
+                    }
+                ]
+            }
+        ];
+
+        const categoryContainer = document.getElementById('categoryContainer');
+
+        function renderCategories() {
+            categoryContainer.innerHTML = '';
+
+            categories.forEach((category, index) => {
+
+                const categoryCard = document.createElement('div');
+
+                categoryCard.className = 'category-card';
+
+                categoryCard.innerHTML = `
+                <h2>${category.title}</h2>
+                <p>${category.description}</p>
+
+                <button class="buy-btn" onclick="showProducts(${index})">
+                    View Products ❤️
+                </button>
+            `;
+
+                categoryContainer.appendChild(categoryCard);
+            });
+        }
+
+        function showProducts(index) {
+
+            const category = categories[index];
+
+            categoryContainer.innerHTML = `
+            <div style="grid-column:1/-1; margin-bottom:30px;">
+                <button class="buy-btn" onclick="renderCategories()" style="max-width:220px;">
+                    ← Back To Categories
+                </button>
+            </div>
+        `;
+
+            category.products.forEach(product => {
+
+                const productCard = document.createElement('div');
+
+                productCard.className = 'product-card';
+
+                productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+
+                <div class="product-info">
+                    <div class="product-title">
+                        <h3>${product.name}</h3>
+                    </div>
+
+                    <p>${product.description}</p>
+
+                    <a href="${product.link}" target="_blank" class="buy-btn">
+                        Surprise Your Partner ❤️
+                    </a>
+                </div>
+            `;
+
+                categoryContainer.appendChild(productCard);
+            });
+        }
+
+        renderCategories();
+    </script>
+</body>
+
+</html>
